@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use './styles/themes/light-theme';
+
+@include mat.core();
+@include light-theme.apply-theme();
+
+// @debug $merged-brand-theme;
+
+
+
+// .content {
+//     @include mat.overridable-elevation(24, blue);
+//     @include mat.elevation-transition(1s);
+//     &:hover {
+//         @include mat.overridable-elevation(24, green);
+//     }
+// }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins', sans-serif; }
